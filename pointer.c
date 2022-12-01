@@ -8,5 +8,4 @@ int main()
 
     printf("%p", &age);
     printf("%u", &age);
-
 }
