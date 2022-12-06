@@ -1,2 +1,2 @@
 # ALL_C
-All the questions from college and and more..
+All the questions from college and more..
