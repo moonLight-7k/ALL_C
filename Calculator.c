@@ -25,6 +25,7 @@ int main()
     {
         printf(" You have selected: Addition");
     }
+    
     printf(" \n Enter the first number: ");
     scanf(" %d", &n1); // take fist number
     printf(" Enter the second number: ");
