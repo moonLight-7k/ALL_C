@@ -6,6 +6,8 @@ int main()
     char opt;
     int n1, n2;
     float res;
+    int choice;
+    do{
     printf(" Choose an operator(+, -, *, /) to perform the operation in C Calculator \n ");
     scanf("%c", &opt); // take an operator
     if (opt == '/')
@@ -60,5 +62,10 @@ int main()
     default: /* use default to print default message if any condition is not satisfied */
         printf(" Something is wrong!! Please check the options ");
     }
+
+    printf("Entre Yes(1) to continue or No (0) to exit");
+    scanf("%d",&choice);
+
+    }while(choice != 0);
     return 0;
 }
