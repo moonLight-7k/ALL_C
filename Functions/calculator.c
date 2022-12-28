@@ -55,11 +55,11 @@ void main()
                 scanf("%d", &b);
 
                 printf("%d", divide(a, b));
+        }
             default: /* use default to print default message if any condition is not satisfied */
                 printf(" Something is wrong!! Please check the options ");
-            }
-        }
-        printf("\nEntre Yes(1) to continue and No (0) to continue\n");
+        }   
+        printf("\n Entre Yes(1) to continue and No (0) to continue\n");
         scanf("%d", &choice);
     } while (choice != 0);
 }
