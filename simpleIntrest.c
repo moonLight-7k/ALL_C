@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+
     int p, r, t, int_amt;
     printf("Input principle: \n");
     scanf("%d", &p);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main()
-
+ 
 {
     float b, h, area_tri;
 
