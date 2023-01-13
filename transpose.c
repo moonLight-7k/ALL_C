@@ -23,7 +23,7 @@ int main()
     }
     printf("\n");
 
-    printf("Transpose of matrix is:\n");
+    printf("Transpose of the matrix is:\n");
 
     for (int i = 0; i < r; i++)
     {
