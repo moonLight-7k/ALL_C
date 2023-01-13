@@ -4,7 +4,7 @@ int main()
 {
     int r, c;
 
-    printf("No. of rows:");
+    printf("Number of rows:");
     scanf("%d", &r);
 
     printf("No. of columns:");
