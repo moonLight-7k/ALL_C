@@ -21,7 +21,7 @@ int main(void)
     }
 
     int transpose[r][c];
-
+    // ------------transpose-----------------
     printf("Transpose of the matrix is:\n");
 
     for (int i = 0; i < r; i++)
@@ -42,6 +42,7 @@ int main(void)
         printf("\n");
     }
 
+    // ---------------------rotating------------------
     printf("90 Degree rotation\n");
 
     for (int i = 0; i < r; i++)
@@ -57,7 +58,7 @@ int main(void)
             k--;
         }
     }
-// TODO rotation correct
+    // TODO rotation correct
     for (int i = 0; i < r; i++)
     {
 
