@@ -14,14 +14,11 @@ int main()
         {
             if (i == (N / 2) + 1 || j == (N / 2) + 1)
             {
-
                 printf("*");
             }
-
             else
                 printf(" ");
         }
-
         printf("\n");
     }
 
