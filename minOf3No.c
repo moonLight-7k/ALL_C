@@ -11,11 +11,11 @@ int main()
 
     if (b >= a && c >= a)
     {
-        printf("%d is the min entred number", a);
+        printf("%d is the min entered number", a);
     }
     if (b <= a && b <= c)
     {
-        printf("%d is the min entred number", b);
+        printf("%d is the min entered number", b);
     }
     else
     {
