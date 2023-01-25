@@ -11,11 +11,11 @@ int main()
 
     if (a >= b && a >= c)
     {
-        printf("%d is the max entred number", a);
+        printf("%d is the max entered number", a);
     }
     if (b >= a && b >= c)
     {
-        printf("%d is the max entred number", b);
+        printf("%d is the max entered number", b);
     }
     else
     {
