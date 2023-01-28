@@ -3,7 +3,7 @@
 This is the repository for questions and mini project while leaning C. Everything built using C.
 
 ## Features
-- Lot of questions and code
+- Many of questions and code
 
 
 
