@@ -9,8 +9,8 @@ This is the repository for questions and mini project while leaning C. Everythin
 
 ## Getting Started
 1. Clone or download the repository.
-2. Open the index.html file in your browser.
-3. Explore the website and learn more about me!
+2. Open the file in your browser.
+3. Explore and learn more about me!
 
 ## Contributing
 If you want to contribute to the development of this website, please submit a pull request with your changes. I will review and merge them if they align with the goals of the website.
