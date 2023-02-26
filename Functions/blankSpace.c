@@ -8,7 +8,7 @@ int main()
 
     printf("Enter a string\n");
     scanf("%[^\n]", string);
-    
+
     for (i = 0; string[i]; i++)
     {
         if (string[i] != ' ')
@@ -25,6 +25,6 @@ int main()
     count = strlen(string);
 
     printf("\nThe number of character in the new string is %d", count);
-    
+
     return 0;
 }
