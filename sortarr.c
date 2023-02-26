@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int a[50], b[25], i, j, k = 1, s, m, n, temp;
 
@@ -13,7 +13,7 @@ int main()
 
     printf(" Enter the number of element in second array : ");
     scanf("%d ", &n);
-    
+
     printf("\n Enter the element of second array in ascending order : \n");
     for (i = 1; i <= n; i++)
         scanf("%d ", &b[i]);
