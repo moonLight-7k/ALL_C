@@ -1,8 +1,8 @@
-// C program to check if a
-// number is prime
+/* C program to check if a
+ number is prime */
 
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 int main()
 {
 
@@ -41,3 +41,22 @@ int main()
 
     return 0;
 }
+
+/*  <===========================(Another way to do it)===========================>
+#include <stdio.h>
+
+int main(void)
+{
+
+    int a;
+
+    scanf("%d", &a);
+
+    if ((a - 1) % 2 == 0)
+        printf("Its prime");
+
+    else
+        printf("Not a prime number");
+}
+
+*/

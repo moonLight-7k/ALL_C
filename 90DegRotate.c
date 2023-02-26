@@ -22,7 +22,7 @@ int main(void)
 
     int transpose[r][c];
     // ------------transpose-----------------
-    printf("Transpose of the matrix is:\n");
+    print("Transpose of the matrix is:\n");
 
     for (int i = 0; i < r; i++)
     {

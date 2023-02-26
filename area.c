@@ -13,7 +13,7 @@ int main()
     area_sq = side * side;
     printf("\nArea of Square : %d", area_sq);
 
-    // // <===================== *** For Rectangle *** =======================>
+    // <===================== *** For Rectangle *** =======================>
 
     printf("\nEnter the Length and Breath of rectangle: ");
     scanf("%d%d", &l, &b);
