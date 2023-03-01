@@ -18,10 +18,20 @@ void insertionSort(int arr[], int n)
 
 int main()
 {
-    int arr[] = {12, 11, 13, 5, 6};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    int arr[100];
 
-    insertionSort(arr, n);
+    printf("Enter the no. of elements in the array:");
+    scanf("%d", &n);
+
+    // Reading input array
+    printf("Enter the elements of the array:\n");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    insertionSort(arr, n); // Sorting the array using insertion sort
 
     printf("Sorted array: ");
     for (int i = 0; i < n; i++)
