@@ -31,7 +31,7 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    insertionSort(arr, n); // Sorting the array using insertion sort
+    insertionSort(arr, n);
 
     printf("Sorted array: ");
     for (int i = 0; i < n; i++)

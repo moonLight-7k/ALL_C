@@ -1,96 +1,47 @@
 #include <stdio.h>
 
-// function to get matrix elements entered by the user
-void getMatrixElements(int matrix[][10], int row, int column)
-{
-
-    printf("\nEnter elements: \n");
-
-    for (int i = 0; i < row; ++i)
-    {
-        for (int j = 0; j < column; ++j)
-        {
-            printf("Enter a%d%d: ", i + 1, j + 1);
-            scanf("%d", &matrix[i][j]);
-        }
-    }
-}
-
-// function to multiply two matrices
-void multiplyMatrices(int first[][10],
-                      int second[][10],
-                      int result[][10],
-                      int r1, int c1, int r2, int c2)
-{
-
-    // Initializing elements of matrix mult to 0.
-    for (int i = 0; i < r1; ++i)
-    {
-        for (int j = 0; j < c2; ++j)
-        {
-            result[i][j] = 0;
-        }
-    }
-
-    // Multiplying first and second matrices and storing it in result
-    for (int i = 0; i < r1; ++i)
-    {
-        for (int j = 0; j < c2; ++j)
-        {
-            for (int k = 0; k < c1; ++k)
-            {
-                result[i][j] += first[i][k] * second[k][j];
-            }
-        }
-    }
-}
-
-// function to display the matrix
-void display(int result[][10], int row, int column)
-{
-
-    printf("\nOutput Matrix:\n");
-    for (int i = 0; i < row; ++i)
-    {
-        for (int j = 0; j < column; ++j)
-        {
-            printf("%d  ", result[i][j]);
-            if (j == column - 1)
-                printf("\n");
-        }
-    }
-}
+#define ROWS_A 2
+#define COLS_A 3
+#define ROWS_B 3
+#define COLS_B 2
 
 int main()
 {
-    int first[10][10], second[10][10], result[10][10], r1, c1, r2, c2;
-    printf("Enter rows and column for the first matrix: ");
-    scanf("%d %d", &r1, &c1);
-    printf("Enter rows and column for the second matrix: ");
-    scanf("%d %d", &r2, &c2);
+    int a[ROWS_A][COLS_A] = {{1, 2, 3}, {4, 5, 6}};
+    int b[ROWS_B][COLS_B] = {{7, 8}, {9, 10}, {11, 12}};
+    int result[ROWS_A][COLS_B] = {0};
 
-    // Taking input until
-    // 1st matrix columns is not equal to 2nd matrix row
-    while (c1 != r2)
+    if (COLS_A != ROWS_B)
     {
-        printf("Error! Enter rows and columns again.\n");
-        printf("Enter rows and columns for the first matrix: ");
-        scanf("%d%d", &r1, &c1);
-        printf("Enter rows and columns for the second matrix: ");
-        scanf("%d%d", &r2, &c2);
+        // matrices cannot be multiplied if number of columns in A
+        // is not equal to number of rows in B
+        printf("Error: cannot multiply matrices with dimensions %dx%d and %dx%d\n", ROWS_A, COLS_A, ROWS_B, COLS_B);
+        return 0;
     }
 
-    // get elements of the first matrix
-    getMatrixElements(first, r1, c1);
+    // perform matrix multiplication
+    int i, j, k;
+    for (i = 0; i < ROWS_A; i++)
+    {
+        for (j = 0; j < COLS_B; j++)
+        {
+            for (k = 0; k < COLS_A; k++)
+            {
+                result[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
 
-    // get elements of the second matrix
-    getMatrixElements(second, r2, c2);
-
-    // multiply two matrices.
-    multiplyMatrices(first, second, result, r1, c1, r2, c2);
-
-    // display the result
-    display(result, r1, c2);
+    // print result
+    printf("Result matrix:\n");
+    for (i = 0; i < ROWS_A; i++)
+    {
+        for (j = 0; j < COLS_B; j++)
+        {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }

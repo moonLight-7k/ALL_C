@@ -11,7 +11,7 @@ int main()
     scanf("%d", &number);
     printf("\n%d %d", n1, n2);   // printing 0 and 1
 
-    for (int i = 2; i < number; ++i) 
+    for (int i = 2; i < numnber; ++i) 
     // loop starts from 2 because 0 and 1 are already printed
     {
         n3 = n1 + n2;

@@ -15,6 +15,4 @@ void main()
     }
 
     printf("Factorial is %d", fact);
-
-
 }

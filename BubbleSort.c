@@ -2,16 +2,9 @@
 
 int main()
 {
-    int arr[100], n, i, j, temp;
-
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
-
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
+    int arr[] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int i, j, temp;
 
     for (i = 0; i < n - 1; i++)
     {

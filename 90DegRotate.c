@@ -5,7 +5,7 @@ int main(void)
     int r, c;
 
     printf("Enter number of rows/columns:");
-    scanf("%d%d", &r, &c);
+    scanf("%d %d", &r, &c);
 
     int arr[r][c];
 
@@ -22,7 +22,7 @@ int main(void)
 
     int transpose[r][c];
     // ------------transpose-----------------
-    print("Transpose of the matrix is:\n");
+    printf("Transpose of the matrix is:\n");
 
     for (int i = 0; i < r; i++)
     {

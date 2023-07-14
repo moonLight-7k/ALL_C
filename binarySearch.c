@@ -24,6 +24,7 @@ int main()
     int arr[] = {1, 3, 5, 7, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
     printf("%d", n);
+
     int target = 5;
     int result = binarySearch(arr, 0, n - 1, target);
 
